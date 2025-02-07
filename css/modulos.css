@@ -1,0 +1,303 @@
+.area-de-modulos{
+    background: transparent !important;
+    width: 100% !important;
+    padding: 0 !important;
+    box-shadow: none;
+    height:80vh;
+}
+.icono-animado{
+    height:50px;
+}
+ .hidden {
+            display: none;
+        }
+
+        /* Contenedor con animación */
+        .fade-in {
+            display: block;
+            opacity: 0;
+            animation: fadeIn 0.5s forwards; /* Duración de la animación */
+        }
+
+        /* Animación de transición */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+                transform: scale(1);
+            }
+            to {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+        }
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 30vh;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images > img {
+    width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.area-cards{
+  justify-content: center !important;
+}
+@media (min-width: 768px) {
+    .slider-item {
+      min-width: 33.333%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .slider-item {
+      min-width: 25%;
+    }
+  }
+  .slider-container {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slider {
+    display: flex;
+    transition: transform 0.4s ease;
+  }
+
+  .slider-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  .slider-item img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+
+  .button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  .button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  .tarjetacontenidomenu{
+    height:22.5vh !important;
+  }
+  .menubutton {
+    display: none;
+  }
+  nav.top > a.logo{
+    align-items: baseline;
+  }
+  .azul-gesi{
+    background-color: #0C3864 !important;
+    color: white !important;
+  }
+
+  .titulo-grafica{
+    font-size: 1.5vh;
+    text-align: center;
+  }
+  .descripcion-grafica{
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 0 !important;
+    font-size: 1.2vh;
+  }
+  .menu-area{
+    padding-left: 3vh;
+  }
+  .icon-header{
+    color: #ff4f43 !important;
+  }
+  .blur{
+    background: #0c3864b8;
+  }
+  
+
+  /* Estilos específicos para TABLETS (pantallas de 768px a 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  
+}
+
+/* Estilos específicos para MÓVILES (pantallas menores a 768px) */
+@media only screen and (max-width: 767px) {
+  .carousel{
+    height:20vh !important;
+  }
+  .large-space{
+    block-size: 0rem !important;
+  }
+  h2{
+    font-size: 1.3rem;
+  }
+  .large-padding > h6{
+    font-size: 1rem !important;
+  }
+  .large-padding > p{
+    font-size: .7rem !important;
+    margin-top:0;
+  }
+  .menubutton {
+    display: none;
+  }
+  nav.top > a.logo{
+    align-items: baseline;
+  }
+  .s6 > a.wave{
+    box-shadow: var(--elevate1) !important;
+  }
+  .menu-area{
+    width: 30vh;
+    padding-left: 2vh;
+  }
+  .area-cards{
+   justify-content: flex-start !important;
+  }
+  .small-round > label {
+    display: none;
+  }
+}
+.small-round{
+  flex-direction: row !important;
+  align-items: center !important; 
+  justify-content: flex-start !important;
+}
+
+.small-round > img {
+  margin-right: 1rem;
+}
+
+.recortar-texto {
+  width: 100%; /* Ocupa el 100% del ancho del contenedor */
+  white-space: nowrap; /* Evita que el texto pase a otra línea */
+  overflow: hidden; /* Oculta el texto que se desborda */
+  text-overflow: ellipsis; /* Agrega "..." al final */
+  box-sizing: border-box; /* Asegura que padding y border no afecten el ancho */
+}
+
+.sombra-1{
+  box-shadow: var(--elevate1);
+}
+.sombra-2{
+  box-shadow: var(--elevate2);
+}
+/* Botón flotante */
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #007BFF;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  color: #fff;
+  font-size: 24px;
+  border: none;
+}
+
+/* Popup */
+.popup {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 300px;
+  width: auto;
+  display: none; /* Oculto por defecto */
+}
+
+.popup h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+/* Botón cerrar */
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.close-popup:hover {
+  color: #007BFF;
+}

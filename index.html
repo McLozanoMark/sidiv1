@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenido a Sidi</title>
+  <link rel="stylesheet" href="styles.css">
+<!--<link rel="stylesheet" href="./css/sidi.css" rel="stylesheet">
+<script type="module" src="./js/sidi.js"></script>-->
+<!--<script type="module" src="./js/sidi-dynamic-colors.js"></script>-->
+<link href="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.css" rel="stylesheet">
+
+<script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
+
+<script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
+  <style>
+    /*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --body-color: #393937;
+  --accent-color: #03e9f4;
+  --white-color: #fff;
+  --box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Montserrat", sans-serif;
+  --normal-font-size: 1rem;
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-semi-bold: 600;
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-image: url('./images/fondo-start.jpg');
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button-animation {
+  position: relative;
+  display: inline-block;
+  padding: 20px 30px;
+  color: white;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 4px;
+  transition: 0.5s;
+  background: rgb(30, 30, 168);
+  border-radius: 7px;
+}
+.button-animation span {
+  position: absolute;
+  display: block;
+}
+
+
+
+.button-animation:hover {
+  background-color: var(--accent-color);
+  color: white;
+  border-radius: 10px;
+  box-shadow: rgb(0, 0, 94);
+}
+.nombre{
+    color:white !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-animation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nombre > img{
+ padding-left: 1vh;
+}
+.minedu_logo, .version, .log{
+    
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+}
+.minedu_logo > img {
+    padding-top: 20px;
+    height: 7vh;
+}
+.container{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.version > p {
+    padding-bottom: 2vh;
+    color:white;
+    font-size: 1vh;
+}
+/* Botón flotante */
+.boton-flotante {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #007bff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .boton-flotante:hover {
+            background-color: #0056b3;
+        }
+
+        /* Ventana flotante */
+        .ventana-consulta {
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            width: 300px;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            display: none;
+            flex-direction: column;
+        }
+
+        .ventana-consulta header {
+            background-color: white;
+            color: #007bff;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .ventana-consulta .contenido {
+            padding: 15px;
+            font-size: 14px;
+        }
+        .contenido > button {
+            background: #007bff;
+            color:white;
+        }
+  </style>
+  
+</head>
+<body>
+  <div class="container">
+    <div class="minedu_logo">
+        <img src="./images/MineduLogo.svg" style="height:8vh;" alt="">
+    </div>
+    <div class="log">
+    <h5 class="nombre">Bienvenido a <img src="./images/logo_sidi_w.png"></h5>
+    <p style="margin: 0; margin-top: 1vh; font-size: 1.5vh; text-align: center; color:white !important">El Sistema Integrado De Información</p>
+    <div class="space"></div>
+    <a class="box__link button-animation" href="./start.html">
+        Ingresar
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+    <div class="space"></div>
+    <div class="areacuenta" style="display: flex; justify-content:space-between; align-items: center;align-self: center; width: auto;">
+      <button style="font-size: 1.3vh; color: white;margin-top: 0 !important; background: transparent;" data-ui="#crearcuenta">¿No tienes usuario?</button>
+      
+    </div>
+</div>
+    <div class="version">
+        <p style="font-size:1.5vh !important;">SIDI v1.2 - Sistema Integrado de Información</p>
+    </div>
+  </div>
+  
+
+  <dialog id="crearcuenta" style="background: white !important; color:black;">
+    
+    <p>Escríbenos al correo <a href="mailto:sidi@minedu.gob.pe?subject=Consulta importante&body=Hola, necesito información sobre...">sidi@minedu.gob.pe</a> o llámanos al 01-6155800 anexo 26236 para ayudarte con el proceso de generación de cuenta.</p>
+    <i style="left:91vh; top:-9vh; font-size: 1.5vh;" id="crearcuenta">X</i>
+    <!--    <nav>
+      <button data-ui="#crearcuenta">Enviar correo</button>
+    </nav>-->
+  </dialog>
+  
+
+<script>
+    // Manejo del botón y la ventana
+    const botonAbrir = document.getElementById('botonAbrir');
+    const ventanaConsulta = document.getElementById('ventanaConsulta');
+
+    botonAbrir.addEventListener('click', () => {
+        const isHidden = ventanaConsulta.style.display === 'none' || !ventanaConsulta.style.display;
+        ventanaConsulta.style.display = isHidden ? 'flex' : 'none';
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,661 @@
+<html lang="en" translate="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google" content="notranslate">
+    <meta name="description"
+        content="The first CSS framework based on Material Design 3. 10x smaller than others CSS frameworks based on Material Design. Translates Material Design to HTML semantic standard. Ready to use with any JS framework. Highly focused on DX.">
+    <title>SIDI</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/sidi.css" rel="stylesheet">
+    <script type="module" src="./js/sidi.js"></script>
+    <script type="module" src="./js/sidi-dynamic-colors.js"></script>
+    <link rel="apple-touch-icon" href="/favicon.png">
+    <link href="./css/modulos.css" rel="stylesheet">
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-0PZF7Z0XQ7');
+    </script>
+    <script src="./js/scripts.js"></script>
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 2265410, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <script async="" src="https://static.hotjar.com/c/hotjar-2265410.js?sv=6"></script>
+    <script async="" src="https://script.hotjar.com/modules.a80e23f65c59cd611c5f.js" charset="utf-8"></script>
+</head>
+
+<body class="light">
+    <div id="app" data-v-app="">
+        <div>
+            <nav class="left m l medium-space">
+                <header></header>
+                <button class="fill square round extra" data-ui="#dialog-add"><i>add</i></button>
+                <a data-ui="#modulo-gestion" href="#" class=""><i>watch_later</i>
+                    <div class="tooltip right">Gestión</div>
+                    <span>Gestión</span>
+                </a><a href="/gmail/snoozed" class=""><i>school</i>
+                    <div class="tooltip right">Educación</div>
+                    <span>Educación</span>
+                </a><a href="/gmail/important" class=""><i>inbox</i>
+                    <div class="tooltip right">Recursos</div>
+                    <span>Recursos</span>
+                </a>
+                </a><a href="/gmail/important" class=""><i>lab_profile</i>
+                    <div class="tooltip right">Reportes</div>
+                    <span>Reportes</span>
+                </a>
+                <div class="overlay"></div>
+
+            </nav>
+            <nav class="bottom s"><a href="#" data-ui="#modulo-gestion" class="active"><i>watch_later</i>
+                <div>Gestión</div>
+            </a><a href="#" data-ui="#modulo-educacion"><i>school</i>
+                <div>Educación</div>
+            </a><a class="button fill square round extra" data-ui="#dialog-add"><i>add</i></a><a
+                href="#" data-ui="#modulo-recursos" class=""><i>inbox</i>
+                <div>Recursos</div>
+            </a><a data-ui="#modulo-reportes"><i>lab_profile</i>
+                <div>Reportes</div>
+            </a>
+            <div class="overlay"></div>
+
+        </nav>
+        <nav class="top sombra-1 azul-gesi"><button class="circle large transparent active menubutton" data-ui="#menu-menu"><i>menu</i>
+            <!--<menu class="no-wrap" id="menu-menu" data-ui="#menu-menu"><a class="row" href="/gmail"><i>inbox</i>
+                    <div class="max">Inboxs</div>
+                </a><a class="row" href="/gmail/snoozed"><i>watch_later</i>
+                    <div class="max">Snoozed</div>
+                </a><a class="row" href="/gmail/important"><i>label_important</i>
+                    <div class="max">Important</div>
+                </a><a class="row" href="/gmail/sent"><i>send</i>
+                    <div class="max">Sent</div>
+                </a><a class="row" href="/gmail/drafts"><i>insert_drive_file</i>
+                    <div class="max">Drafts</div>
+                </a><a class="row" href="/gmail/spam"><i>error_outline</i>
+                    <div class="max">Spam</div>
+                </a><a class="row" data-ui="#themes3"><i>palette</i>
+                    <div class="max">Themes</div>
+                </a></menu>-->
+        </button><a href="./start.html" class="logo" style="width: 12vh;"><img src="./images/logo_sidi_w.png" style="display: none;"><img
+                src="images/logo_sidi_w.png"></a>
+                
+        <div class="max"></div>
+        <div class="field large prefix round fill active" style="width: 50vh;">
+            <i class="front">search</i>
+            <input placeholder="¿Qué estas buscando?">
+            <menu class="min">
+                <div class="field large prefix suffix no-margin fixed">
+                    <i class="front">arrow_back</i>
+                    <input>
+                    <i class="front">close</i>
+                </div>
+                <a class="row" href="./ver.html">
+                    <i>history</i>
+                    <div>PEM Formación 2021</div>
+                </a>
+                <a class="row" href="./ver.html">
+                    <i>history</i>
+                    <div>FOrmación CBD - 2021</div>
+                </a>
+                <a class="row" href="./ver.html">
+                    <i>history</i>
+                    <div>Formación 2022</div>
+                </a>
+            </menu>
+        </div>
+        <div class="max"></div>
+        <button class="circle large transparent s" data-ui="#dialog-search"><i>search</i></button>
+        <!--<a class="circle large transparent m l" href="./config.html"><i>settings</i>
+           
+        </a>-->
+        <!--<button class="circle large transparent m l" data-ui="#menu-apps"><i>apps</i>
+            <menu class="left padding no-wrap" id="menu-apps" data-ui="#menu-apps">
+                <div class="grid no-space">
+                    <div class="s4 center-align"><a class="button transparent circle large"
+                            onclick="mode()"><i>light_mode</i></a></div>
+                    <div class="s4 center-align"><a class="button transparent circle large"><img
+                                class="no-round" src="/keep.png"></a></div>
+                    <div class="s4 center-align"><a class="button transparent circle large"><img
+                                class="no-round" src="/tasks.png"></a></div>
+                    <div class="s4 center-align"><a class="button transparent circle large"><img
+                                class="no-round" src="/contacts.png"></a></div>
+                    <div class="s4 center-align"><a class="button transparent circle large"><img
+                                class="no-round" src="/favicon.png"></a></div>
+                </div>
+            </menu>
+        </button>-->
+
+        <!--<button class="circle transparent">
+            <i>notifications</i>
+
+            <nav class="drawer max no-padding" style="width:30vh !important;">
+                <a class="small-round"><img
+                        class="small" src="/reddit-community.png">
+                    <div class="max wrap" style="width:20vh;">
+                        <div class="recortar-texto">Nuevo reporte de desempeño académico del último trimestre
+                            disponible para su revisión</div><label class="grey-text">05/07/2024 09:00
+                            AM</label>
+                    </div>
+                </a>
+                <a class="small-round"><img class="small" src="/reddit-community.png">
+                    <div class="max wrap" style="width:20vh;">
+                        <div class="recortar-texto">Se ha actualizado el reporte mensual de asistencia con
+                            nuevos datos hasta la fecha.</div><label class="grey-text">05/07/2024 02:30
+                            PM</label>
+                    </div>
+                </a>
+                <a class="small-round"><img class="small" src="/reddit-community.png">
+                    <div class="max wrap" style="width:20vh;">
+                        <div class="recortar-texto">Le recordamos que aún no ha revisado el reporte de
+                            indicadores de gestión educativa del mes pasado
+                        </div><label class="grey-text">06/07/2024 08:00 AM</label>
+                    </div>
+                </a>
+            </nav>
+
+        </button>-->
+        <button class="circle large transparent">
+            <span>No-wrap</span>
+            <i>notifications</i>
+            <menu class="left no-wrap">
+                <a class="small-round"><img class="small" src="./images/user.jpg">
+                <div class="max wrap" style="width:20vh;">
+                    <div class="recortar-texto">Nuevo reporte de desempeño académico del último trimestre
+                        disponible para su revisión</div><label class="grey-text">05/07/2024 09:00
+                        AM</label>
+                </div>
+            </a>
+            <a class="small-round"><img class="small" src="./images/user.jpg">
+                <div class="max wrap" style="width:20vh;">
+                    <div class="recortar-texto">Se ha actualizado el reporte mensual de asistencia con
+                        nuevos datos hasta la fecha.</div><label class="grey-text">05/07/2024 02:30
+                        PM</label>
+                </div>
+            </a>
+            <a class="small-round"><img class="small" src="./images/user.jpg">
+                <div class="max wrap" style="width:20vh;">
+                    <div class="recortar-texto">Le recordamos que aún no ha revisado el reporte de
+                        indicadores de gestión educativa del mes pasado
+                    </div><label class="grey-text">06/07/2024 08:00 AM</label>
+                </div>
+            </a>
+            </menu>
+        </button>
+        <button class="circle large transparent" data-ui="#menu-user">
+            <i class="extra">account_circle</i>
+            <menu class="left no-wrap" id="menu-user" data-ui="#menu-user"><a>
+                    <div>Ajustes</div><label>Actualizar Perfil</label>
+                </a><a href="./index.htmlggit">
+                    <div>Salir</div><label>Cerrar Sesión</label>
+                </a>
+            </menu>
+        </button>
+        <div class="overlay"></div>
+
+    </nav>
+            <main class="responsive max">
+                <div class="blur overlay"></div>
+                <dialog class="round large-width" id="dialog-add">
+                    <nav><button class="circle transparent" data-ui="#dialog-add"><i>arrow_back</i></button>
+                        <h5>Nuevo Grupo</h5>
+                        <div class="max"></div><button class="circle transparent"
+                            data-ui="#dialog-add"><i>attach_file</i></button><button class="circle transparent"
+                            data-ui="#dialog-add"><i>send</i></button>
+                    </nav>
+                    <div class="grid">
+                        <div class="s12">
+                            <div class="field label border"><input type="text" placeholder="Nombre de grupo"><label>Nombre</label></div>
+                        </div>
+                        <div class="s12">
+                            <div class="field label border"><input type="text" placeholder="Posición><label>Posición</label></div>
+                        </div>
+                        <div class="s12">
+                            <div class="field label border"><input type="text" placeholder="Descripción"><label>Descripción</label>
+                            </div>
+                        </div>
+                        <div class="s12">
+                            <div class="field label border textarea"><textarea
+                                    placeholder="Detalles"></textarea><label>Detalles</label></div>
+                        </div>
+                    </div>
+                </dialog>
+                <div class="blur overlay"></div>
+                <dialog class="area-de-modulos" id="modulo-gestion">
+                    <nav><button class="circle transparent" data-ui="#dialog-add"><i>arrow_back</i></button>
+                        <h5><img class="icono-animado" src="./images/pulse.svg"> Gestión</h5>
+                        <div class="max"></div>
+                        <button class="square round extra" id="toggleWindowButton"><i>add</i></button>
+                    </nav>
+                    <div class="row scroll">
+                        <div class="hidden" id="transitionWindow">
+                            <article class="no-padding medium-width">
+                                <div class="padding">
+                                    <div class="row">
+                                        <div class="field border label l m" style="width:100%;"><input
+                                                placeholder=" "><label>Sección</label><i>arrow_drop_down</i>
+                                            <menu><a class="row"><i class="tiny">people</i><span>r/svelte</span></a><a
+                                                    class="row"><i class="tiny">people</i><span>r/svelte</span></a><a
+                                                    class="row"><i class="tiny">people</i><span>r/svelte</span></a>
+                                            </menu>
+                                        </div>
+                                    </div>
+                                    <hr class="large">
+                                    <div class="row">
+                                        <div class="field border label" style="width:100%"><input
+                                                placeholder=" "><label>Nombre de Reporte</label></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="field border label" style="width:100%"><input
+                                                placeholder=" "><label>URL</label></div>
+                                    </div>
+
+                                    <footer class="fixed" style="padding-top:.7vh;">
+                                        <nav class="right-align"><button class="border"
+                                                data-ui="#dialog-post">Cancel</button><button
+                                                data-ui="#dialog-post">Confirm</button></nav>
+                                    </footer>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="">
+                            <article class="no-padding medium-width">
+                                <div class="padding">
+                                    <div class="row"><i>check</i>
+                                        <div><b>Alta Dirección</b>
+                                            <div>Gestión</div>
+                                        </div>
+                                    </div>
+                                    <nav class="drawer max no-padding"><a class="small-round">
+                                            <div class="max wrap">
+                                                <div>Archivo USE</div><label class="grey-text">3 Vistas</label>
+                                            </div>
+                                        </a><a class="small-round">
+                                            <div class="max wrap">
+                                                <div>"Archivo USE 2024"</div><label class="grey-text">40 Vistas</label>
+                                            </div>
+                                        </a><a class="small-round">
+                                            <div class="max wrap">
+                                                <div>BI Aprendizaje</div><label class="grey-text">12 Vistas</label>
+                                            </div>
+                                        </a></nav>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="">
+                            <article class="no-padding medium-width">
+                                <div class="padding">
+                                    <div class="row"><i>check</i>
+                                        <div><b>Alta Dirección</b>
+                                            <div>Gestión</div>
+                                        </div>
+                                    </div>
+                                    <nav class="drawer max no-padding"><a class="small-round">
+                                            <div class="max wrap">
+                                                <div>Archivo USE</div><label class="grey-text">3 Vistas</label>
+                                            </div>
+                                        </a><a class="small-round">
+                                            <div class="max wrap">
+                                                <div>"Archivo USE 2024"</div><label class="grey-text">40 Vistas</label>
+                                            </div>
+                                        </a><a class="small-round">
+                                            <div class="max wrap">
+                                                <div>BI Aprendizaje</div><label class="grey-text">12 Vistas</label>
+                                            </div>
+                                        </a></nav>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="">
+                            <article class="no-padding medium-width">
+                                <div class="padding">
+                                    <div class="row"><i>check</i>
+                                        <div><b>Alta Dirección</b>
+                                            <div>Gestión</div>
+                                        </div>
+                                    </div>
+                                    <nav class="drawer max no-padding"><a class="small-round">
+                                            <div class="max wrap">
+                                                <div>Archivo USE</div><label class="grey-text">3 Vistas</label>
+                                            </div>
+                                        </a><a class="small-round">
+                                            <div class="max wrap">
+                                                <div>"Archivo USE 2024"</div><label class="grey-text">40 Vistas</label>
+                                            </div>
+                                        </a><a class="small-round">
+                                            <div class="max wrap">
+                                                <div>BI Aprendizaje</div><label class="grey-text">12 Vistas</label>
+                                            </div>
+                                        </a></nav>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="">
+                            <article class="no-padding medium-width">
+                                <div class="padding">
+                                    <div class="row"><i>check</i>
+                                        <div><b>Alta Dirección</b>
+                                            <div>Gestión</div>
+                                        </div>
+                                    </div>
+                                    <nav class="drawer max no-padding"><a class="small-round">
+                                            <div class="max wrap">
+                                                <div>Archivo USE</div><label class="grey-text">3 Vistas</label>
+                                            </div>
+                                        </a><a class="small-round">
+                                            <div class="max wrap">
+                                                <div>"Archivo USE 2024"</div><label class="grey-text">40 Vistas</label>
+                                            </div>
+                                        </a><a class="small-round">
+                                            <div class="max wrap">
+                                                <div>BI Aprendizaje</div><label class="grey-text">12 Vistas</label>
+                                            </div>
+                                        </a></nav>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </dialog>
+                <!--<dialog class="round large-width" id="modulo-gestion">
+                    
+                    <nav><button class="circle transparent" data-ui="#dialog-add"><i>arrow_back</i></button>
+                        <h5>Nuevo Gestión</h5>
+                        <div class="max"></div><button class="circle transparent"
+                            data-ui="#dialog-add"><i>attach_file</i></button><button class="circle transparent"
+                            data-ui="#dialog-add"><i>send</i></button>
+                    </nav>
+                    <div class="grid">
+                        <div class="s12">
+                            <div class="field label border"><input type="text" placeholder=" "><label>From</label></div>
+                        </div>
+                        <div class="s12">
+                            <div class="field label border"><input type="text" placeholder=" "><label>To</label></div>
+                        </div>
+                        <div class="s12">
+                            <div class="field label border"><input type="text" placeholder=" "><label>Subject</label>
+                            </div>
+                        </div>
+                        <div class="s12">
+                            <div class="field label border textarea"><textarea
+                                    placeholder=" "></textarea><label>Message</label></div>
+                        </div>
+                    </div>
+                </dialog>-->
+                <div class="overlay"></div>
+                <dialog class="top-round bottom" id="dialog-add-small">
+                    <nav><button class="circle transparent" data-ui="#dialog-add-small"><i>arrow_back</i></button>
+                        <h5>New mail</h5>
+                        <div class="max"></div><button class="circle transparent"
+                            data-ui="#dialog-add-small"><i>attach_file</i></button><button class="circle transparent"
+                            data-ui="#dialog-add-small"><i>send</i></button>
+                    </nav>
+                    <div class="grid">
+                        <div class="s12">
+                            <div class="field label border"><input type="text" placeholder=" "><label>From</label></div>
+                        </div>
+                        <div class="s12">
+                            <div class="field label border"><input type="text" placeholder=" "><label>To</label></div>
+                        </div>
+                        <div class="s12">
+                            <div class="field label border"><input type="text" placeholder=" "><label>Subject</label>
+                            </div>
+                        </div>
+                        <div class="s12">
+                            <div class="field label border textarea"><textarea
+                                    placeholder=" "></textarea><label>Message</label></div>
+                        </div>
+                    </div>
+                </dialog>
+                <div class="overlay"></div>
+                <dialog class="top transparent" id="dialog-search">
+                    <nav>
+                        <div class="max m l"></div>
+                        <div class="max field round suffix prefix small no-margin white black-text"><i
+                                class="front">search</i><input type="text" placeholder=" "><i class="front">mic</i>
+                        </div>
+                        <div class="max m l"></div>
+                    </nav>
+                </dialog>
+                <!--CONTENT-->
+                <div class="page right active" style="padding-right: 2vh;">
+                    <div id="app-bars">
+                        <h4>Config</h4>
+                        <div class="medium-space"></div>
+                    </div>
+                    <div id="top-app-bars">
+                        <nav>
+                            <h6>Alertas</h6>
+                            <div class="max"></div>
+                            <div class="field large prefix round fill active">
+                                <i class="front">search</i>
+                                <input>
+                                <menu class="min">
+                                    <div class="field large prefix suffix no-margin fixed">
+                                        <i class="front">arrow_back</i>
+                                        <input>
+                                        <i class="front">close</i>
+                                    </div>
+                                    <a class="row">
+                                        <i>history</i>
+                                        <div>Item 1</div>
+                                    </a>
+                                    <a class="row">
+                                        <i>history</i>
+                                        <div>Item 2</div>
+                                    </a>
+                                    <a class="row">
+                                        <i>history</i>
+                                        <div>Item 3</div>
+                                    </a>
+                                </menu>
+                            </div>
+                            <button class="square round extra">
+                                <i>add</i>
+                            </button>
+                        </nav>
+                        <div class="space"></div>
+                    </div>
+                    <div class="row m l"><button class="circle transparent m l disabled"><i>edit</i><i
+                                class="yellow-text" style="display: none;">star</i></button><button
+                            class="circle transparent"><i>delete</i></button><button
+                            class="circle transparent"><i>more_vert</i></button>
+                        <div class="max"></div><label>from 1 to 30</label><button
+                            class="circle transparent"><i>arrow_back</i></button><button
+                            class="circle transparent"><i>arrow_forward</i></button>
+                    </div>
+                    <div class="space m l"></div>
+                    <hr class="m l">
+                    <hr class="small s"><a class="row"><button class="circle transparent m l"><i>edit</i><i
+                                class="yellow-text" style="display: none;">star</i></button><button
+                            class="circle transparent m l"><i>delete</i><i class="yellow-text"
+                                style="display: none;">delete</i></button><button class="small circle s">A</button>
+                        <div class="max truncate"><b>Configuración -&nbsp;</b><b>Análisis Educativo -&nbsp;</b><span>Por
+                                favor, revise las alertas configuradas para garantizar que todas las métricas de
+                                análisis educativo estén actualizadas y funcionando correctamente.</span></div>
+                        <label>12:03</label>
+                    </a>
+                    <hr class="m l">
+                    <hr class="small s"><a class="row"><button class="circle transparent m l"><i>edit</i><i
+                                class="yellow-text" style="display: none;">star</i></button><button
+                            class="circle transparent m l"><i>delete</i><i class="yellow-text"
+                                style="display: none;">star</i></button><button class="small circle s">A</button>
+                        <div class="max truncate"><b>Configuración -&nbsp;</b><b>Análisis Educativo -&nbsp;</b><span>Se
+                                detectaron configuraciones pendientes que podrían afectar el rendimiento del sistema de
+                                análisis educativo.</span></div><label>12:03</label>
+                    </a>
+                    <hr class="m l">
+                    <hr class="small s"><a class="row"><button class="circle transparent m l"><i>edit</i><i
+                                class="yellow-text" style="display: none;">star</i></button><button
+                            class="circle transparent m l"><i>delete</i><i class="yellow-text"
+                                style="display: none;">star</i></button><button class="small circle s">A</button>
+                        <div class="max truncate"><b>Configuración -&nbsp;</b><b>Análisis Educativo
+                                -&nbsp;</b><span>Actualice las configuraciones de análisis para reflejar los últimos
+                                cambios en los objetivos educativos.</span></div><label>12:03</label>
+                    </a>
+                    <hr class="m l">
+                    <hr class="small s"><a class="row"><button class="circle transparent m l"><i>edit</i><i
+                                class="yellow-text" style="display: none;">star</i></button><button
+                            class="circle transparent m l"><i>delete</i><i class="yellow-text"
+                                style="display: none;">star</i></button><button class="small circle s">A</button>
+                        <div class="max truncate"><b>Configuración -&nbsp;</b><b>Análisis Educativo
+                                -&nbsp;</b><span>Revise los indicadores clave de análisis educativo para evitar
+                                discrepancias en los informes generados.</span></div><label>12:03</label>
+                    </a>
+                    <hr class="m l">
+                    <hr class="small s"><a class="row"><button class="circle transparent m l"><i>edit</i><i
+                                class="yellow-text" style="display: none;">star</i></button><button
+                            class="circle transparent m l"><i>delete</i><i class="yellow-text"
+                                style="display: none;">star</i></button><button class="small circle s">A</button>
+                        <div class="max truncate"><b>Configuración -&nbsp;</b><b>Análisis Educativo -&nbsp;</b><span>Se
+                                recomienda realizar una auditoría de las configuraciones actuales para optimizar el
+                                análisis educativo.</span></div><label>12:03</label>
+                    </a>
+                    <hr class="m l">
+                    <hr class="small s"><a class="row"><button class="circle transparent m l"><i>edit</i><i
+                                class="yellow-text" style="display: none;">star</i></button><button
+                            class="circle transparent m l"><i>delete</i><i class="yellow-text"
+                                style="display: none;">star</i></button><button class="small circle s">A</button>
+                        <div class="max truncate"><b>Configuración -&nbsp;</b><b>Análisis Educativo -&nbsp;</b><span>Se
+                                encontraron valores predeterminados en las configuraciones que podrían afectar el
+                                análisis educativo.</span></div><label>12:03</label>
+                    </a>
+                    <div class="space"></div>
+                    <div class="space"></div>
+                    <div id="top-app-bars">
+                        <nav>
+                            <h6>Gráficas BI</h6>
+                            <div class="max"></div>
+                            <div class="field large prefix round fill active">
+                                <i class="front">search</i>
+                                <input>
+                                <menu class="min">
+                                    <div class="field large prefix suffix no-margin fixed">
+                                        <i class="front">arrow_back</i>
+                                        <input>
+                                        <i class="front">close</i>
+                                    </div>
+                                    <a class="row">
+                                        <i>history</i>
+                                        <div>Item 1</div>
+                                    </a>
+                                    <a class="row">
+                                        <i>history</i>
+                                        <div>Item 2</div>
+                                    </a>
+                                    <a class="row">
+                                        <i>history</i>
+                                        <div>Item 3</div>
+                                    </a>
+                                </menu>
+                            </div>
+                            <button class="square round extra">
+                                <i>add</i>
+                            </button>
+                        </nav>
+                        <div class="space"></div>
+                        <div class="row m l"><button class="circle transparent m l disabled"><i>edit</i><i
+                                class="yellow-text" style="display: none;">star</i></button><button
+                            class="circle transparent"><i>delete</i></button><button
+                            class="circle transparent"><i>more_vert</i></button>
+                        <div class="max"></div><label>from 1 to 30</label><button
+                            class="circle transparent"><i>arrow_back</i></button><button
+                            class="circle transparent"><i>arrow_forward</i></button>
+                    </div>
+                    <div class="space m l"></div>
+                    <hr class="m l">
+                    <hr class="small s"><a class="row"><button class="circle transparent m l"><i>edit</i><i
+                                class="yellow-text" style="display: none;">star</i></button><button
+                            class="circle transparent m l"><i>delete</i><i class="yellow-text"
+                                style="display: none;">delete</i></button><button class="small circle s">A</button>
+                        <div class="max truncate"><b>Alta Dirección -&nbsp;</b><b>Reporte Ejecutivo</b><span></span></div>
+                        <label>12:03</label>
+                    </a>
+                    <hr class="m l">
+                    <hr class="small s"><a class="row"><button class="circle transparent m l"><i>edit</i><i
+                                class="yellow-text" style="display: none;">star</i></button><button
+                            class="circle transparent m l"><i>delete</i><i class="yellow-text"
+                                style="display: none;">star</i></button><button class="small circle s">A</button>
+                        <div class="max truncate"><b>Contratación -&nbsp;</b><b>Programas 2021 -&nbsp;</b><span></span></div><label>12:03</label>
+                    </a>
+                    <hr class="m l">
+                    <hr class="small s"><a class="row"><button class="circle transparent m l"><i>edit</i><i
+                                class="yellow-text" style="display: none;">star</i></button><button
+                            class="circle transparent m l"><i>delete</i><i class="yellow-text"
+                                style="display: none;">star</i></button><button class="small circle s">A</button>
+                        <div class="max truncate"><b>Acciones Fomativas -&nbsp;</b><b>PEM Formación 2021
+                                -&nbsp;</b><span></span></div><label>12:03</label>
+                    </a>
+                    <hr class="m l">
+                    <hr class="small s"><a class="row"><button class="circle transparent m l"><i>edit</i><i
+                                class="yellow-text" style="display: none;">star</i></button><button
+                            class="circle transparent m l"><i>delete</i><i class="yellow-text"
+                                style="display: none;">star</i></button><button class="small circle s">A</button>
+                        <div class="max truncate"><b>Semáforo Escuela -&nbsp;</b><b>BI Semaforo Escuela 2021
+                                -&nbsp;</b><span></span></div><label>12:03</label>
+                    </a>
+                    <hr class="m l">
+                    <hr class="small s"><a class="row"><button class="circle transparent m l"><i>edit</i><i
+                                class="yellow-text" style="display: none;">star</i></button><button
+                            class="circle transparent m l"><i>delete</i><i class="yellow-text"
+                                style="display: none;">star</i></button><button class="small circle s">A</button>
+                        <div class="max truncate"><b>Aprendo en Casa -&nbsp;</b><b>BI Aprendo En Casa -&nbsp;</b><span></span></div><label>12:03</label>
+                    </a>
+                    <hr class="m l">
+                    <hr class="small s"><a class="row"><button class="circle transparent m l"><i>edit</i><i
+                                class="yellow-text" style="display: none;">star</i></button><button
+                            class="circle transparent m l"><i>delete</i><i class="yellow-text"
+                                style="display: none;">star</i></button><button class="small circle s">A</button>
+                        <div class="max truncate"><b>Estudiantes -&nbsp;</b><b>Reporte Estudiantil 2022 -&nbsp;</b><span></span></div><label>12:03</label>
+                    </a>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="/__/firebase/8.2.9/firebase-app.js"></script>
+    <script src="/__/firebase/8.2.9/firebase-analytics.js"></script>
+    <script src="/__/firebase/init.js"></script>
+    <script type="module" src="/app.js"></script>
+    <script>
+        const theme = async (from) => {
+            await ui("theme", from);
+        };
+
+        const mode = () => {
+            let newMode = ui("mode") == "dark" ? "light" : "dark";
+            ui("mode", newMode);
+        }
+
+    </script>
+    <script>
+        const toggleButton = document.getElementById('toggleWindowButton');
+        const transitionWindow = document.getElementById('transitionWindow');
+
+        toggleButton.addEventListener('click', () => {
+            if (transitionWindow.classList.contains('hidden')) {
+                transitionWindow.classList.remove('hidden');
+                transitionWindow.classList.add('fade-in');
+            } else {
+                transitionWindow.classList.remove('fade-in');
+                transitionWindow.classList.add('hidden');
+            }
+        });
+    </script>
+    <iframe id="_hjSafeContext_86399580" title="_hjSafeContext" tabindex="-1" aria-hidden="true" src="about:blank"
+        style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe>
+
+</body>
+
+</html>

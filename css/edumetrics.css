@@ -1,0 +1,143 @@
+main{
+    background: #F3F3F3 !important;
+}
+.area-article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.visor-logo{
+    height:100%;
+    width: 20vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    overflow: hidden;      
+    background: white; 
+    border-radius: 3vh 0 0 3vh;
+    border-right:1px #dbdbdb solid;
+}
+.visor-logo > img{
+    max-width: 100%;        /* Limita el ancho de la imagen al contenedor */
+    max-height: 100%;       /* Limita el alto de la imagen al contenedor */
+    object-fit: contain;    /* Escala la imagen manteniendo su proporción */
+}
+.visor-menu-container {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    overflow: hidden; /* Oculta las barras de scroll */
+}
+
+.topbar{
+    height:16vh; 
+    display: flex !important; 
+    flex-direction: row; 
+    background: white;
+}
+.visor-menu {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll; /* Permite el desplazamiento horizontal */
+    scroll-behavior: smooth;
+    -ms-overflow-style: none; /* Oculta la barra de scroll en IE y Edge */
+    scrollbar-width: none; /* Oculta la barra de scroll en Firefox */
+}
+
+.visor-menu::-webkit-scrollbar {
+    display: none; /* Oculta la barra de scroll en Chrome, Safari y Edge */
+}
+
+.visor-menu-list {
+    height: 15vh;
+    width: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(243 243 243);
+    flex: 0 0 auto; /* Evita que los elementos se reduzcan automáticamente */
+    margin: 0 1vh;
+}
+
+.visor-menu-list > img {
+    max-width: 100%;        /* Limita el ancho de la imagen al contenedor */
+    max-height: 100%;       /* Limita el alto de la imagen al contenedor */
+    object-fit: contain;    /* Escala la imagen manteniendo su proporción */
+}
+
+.visor-menu-list > p {
+    margin: 0;
+}
+
+.visor-menu-list-space {
+    height: 15vh;
+    width: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    background-image: url('../assets/right.jpg');
+    background-position: center;
+    background-size: contain;
+    margin: 0 1vh;
+}
+.articles_filter{
+    height:7vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    background: white;
+}
+.articles_filter > div {
+    padding: 0;
+    margin: 0;
+    background: rgb(230, 229, 229);
+}
+.articles_map{
+    height:70vh;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    padding: 2vh;
+    background: white;
+    flex-direction: column;
+}
+.articles_map > p {
+    font-size: 3vh;
+    color: orange;
+}
+.articles_map > img {
+    height: 60vh;
+}
+.articles_analisis{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    padding: 2vh;
+    background: white;
+}
+
+.articles_analisis > img {
+    height: 60vh;
+}
+@media screen and (max-width: 768px) {
+
+
+.articles_map > img {
+    height: auto;
+    width: 90vw;
+}
+.portada {
+    height: 30vh;
+}
+
+
+}
